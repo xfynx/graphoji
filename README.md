@@ -2,6 +2,10 @@
 
 A simple web application for creating emoji art using a grid-based canvas.
 
+## Live Demo
+
+You can try the application here: [Graphoji Demo](https://xfynx.github.io/graphoji/)
+
 ## Features
 
 - Create emoji art using a grid-based canvas
@@ -24,16 +28,8 @@ A simple web application for creating emoji art using a grid-based canvas.
 
 ## Controls
 
-- **Grid Size**: Adjust the size of the grid (10x10 to 50x50)
+- **Grid Size**: Adjust the size of the grid
 - **Show Grid**: Toggle grid visibility
 - **Copy as Text**: Copy the emoji art as text
 - **Save as Image**: Save the emoji art as a PNG image
 - **Clear**: Clear the canvas
-
-## Live Demo
-
-You can try the application here: [Graphoji Demo](https://steew.github.io/graphoji/)
-
-## License
-
-MIT License 
