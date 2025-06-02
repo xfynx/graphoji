@@ -121,8 +121,34 @@
 }
 
 @media screen and (max-width: 768px) {
+  .canvas-container {
+    width: 95%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .emoji-container {
+    max-height: 150px;
+  }
+
   .field.is-horizontal .field-body {
     flex-direction: column;
     gap: 0.5rem;
   }
+}
+
+.button.is-active {
+  background-color: #ffdd57;
+  border-color: transparent;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#eraser-button.is-warning.is-active {
+  background-color: #ffae19; /* Немного темнее стандартного warning */
+  border-color: transparent;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.is-hidden {
+  display: none;
 } 

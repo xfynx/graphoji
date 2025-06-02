@@ -1,29 +1,39 @@
 # Graphoji
 
-Интерактивный редактор для создания изображений из эмодзи.
+A simple web application for creating emoji art using a grid-based canvas.
 
-## Возможности
+## Features
 
-- Рисование эмодзи на сетке
-- Выбор из различных категорий эмодзи
-- Настройка размера сетки
-- Сохранение изображения
-- Копирование текстового представления
-- Автоматическое сохранение в localStorage
+- Create emoji art using a grid-based canvas
+- Select emojis from different categories
+- Adjust grid size
+- Show/hide grid
+- Copy art as text
+- Save art as image
+- Clear canvas
+- Auto-save state
 
-## Использование
+## Usage
 
-1. Выберите эмодзи из доступных категорий
-2. Рисуйте левой кнопкой мыши
-3. Стирайте правой кнопкой мыши
-4. Используйте кнопки управления для:
-   - Сохранения изображения
-   - Копирования текста
-   - Очистки холста
+1. Open `index.html` in your web browser
+2. Select an emoji from the grid
+3. Click on the canvas to place emojis
+4. Right-click to erase emojis
+5. Use the controls to adjust grid size and visibility
+6. Copy your art as text or save it as an image
 
-## Технологии
+## Controls
 
-- HTML5 Canvas
-- JavaScript
-- CSS3
-- LocalStorage для сохранения состояния 
+- **Grid Size**: Adjust the size of the grid (10x10 to 50x50)
+- **Show Grid**: Toggle grid visibility
+- **Copy as Text**: Copy the emoji art as text
+- **Save as Image**: Save the emoji art as a PNG image
+- **Clear**: Clear the canvas
+
+## Live Demo
+
+You can try the application here: [Graphoji Demo](https://steew.github.io/graphoji/)
+
+## License
+
+MIT License 

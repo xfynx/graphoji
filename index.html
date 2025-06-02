@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
  <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,23 +11,24 @@
  <body>
   <section class="section">
     <div class="container">
-      <!-- Контейнер для уведомлений -->
+      <!-- Notifications container -->
       <div id="notifications-container"></div>
       
       <h1 class="title has-text-centered">
         Graphoji
       </h1>
+
       <div class="box">
         <div class="field">
-          <label class="label">Выберите эмодзи</label>
-          <div class="emoji-grid">
-            <!-- Эмодзи будут добавлены через JavaScript -->
+          <label class="label" for="emoji-select">Select emoji</label>
+          <div class="emoji-grid" id="emoji-select">
+            <!-- Emojis will be added via JavaScript -->
           </div>
         </div>
 
         <div class="field is-horizontal">
           <div class="field-label is-normal">
-            <label class="label">Размер таблицы</label>
+            <label class="label" for="grid-size">Grid size</label>
           </div>
           <div class="field-body">
             <div class="field">
@@ -48,9 +49,9 @@
             </div>
             <div class="field">
               <div class="control">
-                <label class="checkbox">
+                <label class="checkbox" for="show-grid">
                   <input type="checkbox" id="show-grid" checked>
-                  Показать сетку
+                  Show grid
                 </label>
               </div>
             </div>
@@ -67,7 +68,7 @@
               <span class="icon">
                 <i class="fas fa-copy"></i>
               </span>
-              <span>Копировать как текст</span>
+              <span>Copy as text</span>
             </button>
           </div>
           <div class="control">
@@ -75,7 +76,15 @@
               <span class="icon">
                 <i class="fas fa-image"></i>
               </span>
-              <span>Сохранить как картинку</span>
+              <span>Save as image</span>
+            </button>
+          </div>
+          <div class="control">
+            <button id="eraser-button" class="button is-warning">
+              <span class="icon">
+                <i class="fas fa-eraser"></i>
+              </span>
+              <span>Eraser</span>
             </button>
           </div>
           <div class="control">
@@ -83,12 +92,12 @@
               <span class="icon">
                 <i class="fas fa-trash"></i>
               </span>
-              <span>Очистить</span>
+              <span>Clear</span>
             </button>
           </div>
         </div>
 
-        <!-- Скрытое поле для копирования -->
+        <!-- Hidden field for copying -->
         <textarea id="result-text" class="is-hidden" readonly></textarea>
       </div>
     </div>
